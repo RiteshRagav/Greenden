@@ -49,3 +49,7 @@ Greenden is a responsive and stylish plant e-commerce frontend website, designed
 
 Inspired by nature and minimal e-commerce designs.
 Built with ❤️ by Ritesh using Tailwind CSS.
+
+To view the Project : 
+https://riteshragav.github.io/Greenden/
+
