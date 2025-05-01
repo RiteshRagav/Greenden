@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Greenden</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+</head>
+<body class="font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-green-100 p-4 flex justify-between items-center shadow-md sticky top-0 z-10">
+    <h1 class="text-2xl font-bold">Greenden</h1>
+    <!-- Hamburger Icon -->
+    <div class="md:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+      </svg>
+    </div>
+    <!-- Navigation Links -->
+    <ul class="hidden md:flex space-x-6 text-gray-700">
+      <li><a href="#" class="hover:underline">Home</a></li>
+      <li><a href="product.html" class="hover:underline">Products</a></li>
+      <li><a href="contact.html" class="hover:underline">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-green-100 p-6 md:p-10 flex flex-col md:flex-row items-center justify-between">
+    <div class="md:w-1/2">
+      <p class="mb-2">We Offer You a Wide range of Artificial and Natural Flowers</p>
+      <h2 class="text-3xl md:text-5xl font-bold mb-4">Plants For Your Interior</h2>
+      <div class="space-x-3">
+        <button class="bg-black text-white px-4 py-2 rounded">Shop Now</button>
+        <button class="border border-black px-4 py-2 rounded">Watch Video</button>
+      </div>
+      <p class="mt-4 text-gray-700">160+ Plant Species | 100+ Clients</p>
+    </div>
+    <div class="hidden md:block md:w-1/2 mt-6 md:mt-0">
+      <img src="./assets/bestseller_5 .jpg" alt="Plant Interior" class="w-80 h-60 rounded shadow-md"/>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section class="text-center p-6">
+    <h1 class="text-3xl font-bold mb-2">About Us</h1>
+    <p class="text-gray-600 mb-6">This Site is For Those Who Admire The Beauty of Plants</p>
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div class="border border-black p-4 rounded shadow-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path d="M2.25 18.75..." />
+        </svg>
+        <h2 class="text-xl font-semibold mb-1">Large Assortment</h2>
+        <p>Explore a wide variety of vibrant indoor and outdoor plants. From succulents to rare species.</p>
+      </div>
+      <!-- Card 2 -->
+      <div class="border border-black p-4 rounded shadow-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path d="M21 11.25..." />
+        </svg>
+        <h2 class="text-xl font-semibold mb-1">Free & Fast Shipping</h2>
+        <p>GreenDen ensures fast, free shipping right to your doorstep—fresh and hassle-free.</p>
+      </div>
+      <!-- Card 3 -->
+      <div class="border border-black p-4 rounded shadow-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path d="M8.625 9.75..." />
+        </svg>
+        <h2 class="text-xl font-semibold mb-1">24/7 Support</h2>
+        <p>Our expert support team is available 24/7 to guide you with plant care, orders, and more.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Sellers -->
+  <section class="p-6 text-center">
+    <h1 class="text-3xl font-bold mb-6">Best Sellers</h1>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div>
+        <img src="./assets/bestseller_2.jpg" alt="Plant 1" class="inline hover:shadow-xl transform hover:-translate-y-2 duration-200"/>
+        <h2 class="mt-2 font-medium">Lavender</h2>
+        <p>$20</p>
+      </div>
+      <div>
+        <img src="./assets/bestseller_3.jpg" alt="Plant 2" class="inline hover:shadow-xl transform hover:-translate-y-2 duration-200"/>
+        <h2 class="mt-2 font-medium">Money Plant</h2>
+        <p>$20</p>
+      </div>
+      <div>
+        <img src="./assets/bestseller_4.jpg" alt="Plant 3" class="inline hover:shadow-xl transform hover:-translate-y-2 duration-200"/>
+        <h2 class="mt-2 font-medium">Rose plant</h2>
+        <p>$20</p>
+      </div>
+      <div>
+        <img src="./assets/bestseller_5.jpg" alt="Plant 4" class="inline hover:shadow-xl transform hover:-translate-y-2 duration-200"/>
+        <h2 class="mt-2 font-medium">Dracaena trifasciata</h2>
+        <p>$20</p>
+      </div>
+    </div>
+  </section>
+
+<!--Customer Reviews-->
+  <section class="p-6 flex-col ">
+    <h1 class="text-3xl font-bold text-center mb-6">Customer Reviews</h1>
+    <div class="flex flex-col gap-5 justify-content-center text-white m-5 ">
+      <div class="bg-green-900 p-5 ">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quas officia quaerat voluptatum ipsum dolore praesentium cum eligendi esse doloribus asperiores deleniti rerum autem perspiciatis deserunt voluptates omnis, reprehenderit reiciendis beatae impedit facilis atque temporibus iste! Laudantium quas officia, ullam animi eum at, ab alias soluta iste praesentium quae debitis!
+          <p class="font-bold text-yellow-300">Genny Mathew</p>
+        </p>
+      </div>
+
+      <div class="bg-green-900 p-5 ">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quas officia quaerat voluptatum ipsum dolore praesentium cum eligendi esse doloribus asperiores deleniti rerum autem perspiciatis deserunt voluptates omnis, reprehenderit reiciendis beatae impedit facilis atque temporibus iste! Laudantium quas officia, ullam animi eum at, ab alias soluta iste praesentium quae debitis!
+          <p class="font-bold text-yellow-300">Gwen</p>
+        </p>
+      </div>
+
+      <div class="bg-green-900 p-5 ">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quas officia quaerat voluptatum ipsum dolore praesentium cum eligendi esse doloribus asperiores deleniti rerum autem perspiciatis deserunt voluptates omnis, reprehenderit reiciendis beatae impedit facilis atque temporibus iste! Laudantium quas officia, ullam animi eum at, ab alias soluta iste praesentium quae debitis!
+          <p class="font-bold text-yellow-300">Peter</p>
+        </p>
+      </div>
+    </div>
+    
+  </section>
+
+  <!--Newsletter-->
+
+  <section class="text-ceneter  flex flex-col  justify-center items-center">
+    <h1 class="text-3xl font-bold mt-5 text-center p-2 ">Join our News Letter</h1>
+    <p class="text-center p-2">Signup for our email newspaper to get exclusive discounts,updates, and more</p>
+    <input type="text" class="border border-black p-2 m-5 " style="width:80%;">
+    <br>
+    <button class="bg-black text-white p-3 m-1 underlinetext-center">Subscribe</button>  
+    <br>
+
+  </section>
+
+  <!--Footer-->
+  <section class="bg-green-100 p-10 flex flex-col gap-5">
+    <h1 class="text-4xl font-bold">Greenden</h1>
+    <p>The Standard chunk of Lorem ipsum used since the 1500s is reproduced below for those interest</p>
+    <p>@2021 GreenDen.com</p>
+  </section>
