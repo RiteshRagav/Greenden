@@ -1,79 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us - Greenden</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenden - contact</title>
+
+    <!--Tailwind cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" integrity="sha256-tq2XQC7duQPnpdenPuR6Z5IE773aRSGjkcutnfUJuTI=" crossorigin="anonymous">
 </head>
-<body class="bg-green-50 text-gray-800">
+<body>
 
-  <!--SideNavbar-->
-    <section id="sidenav" class="bg-green-100 fixed z-20 top-0  transition-all duration-1000right:-50%;" style="width: 50%;height:100vh">
-       <div class="text-right p-5">
-        <p id="closenav" class="inline cursor-pointer">X</p>
-       </div>
+
+
+
+     <!--Responsive Navbar-->
+
+     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+        <h1 class="text-2xl">Greenden</h1>
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-5 h-5 md:hidden"  id="show-nav">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+          </svg>
+          
+          
+          
+          
+
+
+       <ul class="flex gap-5 text-grey-600  hidden md:flex">
+        <li>
+            <a href="index.html" class="hover:underline hover:text-black-600">Home</a>
+        </li>
+        <li>
+            <a href="product.html" class="hover:underline hover:text-black-600">Products</a>
+        </li>
+        <li>
+            <a href="contact.html" class="hover:underline hover:text-black-600">Contact</a>
+        </li>
+       </ul>
+    </nav>
+
+
+
+
+
+
+    
+<!--side navbar-->
+
+<section id="sidenav" class="bg-green-100 fixed z-20 top-0 right-0 " style="width: 50%; height: 100vh; right: -60%; transition: 1.5s ;">
+
+
+
+
+<div  class="text-right p-5">
+
+<p class="inline cursor-pointer" id="close-nav">X</p>
+
+</div>
+
+
+
+
+       <ul class="flex flex-col  items-center gap-10 text-grey-600 ">
+        <li>
+            <a href="index.html" class="hover:underline hover:text-black-600">Home</a>
+        </li>
+        <li>
+            <a href="product.html" class="hover:underline hover:text-black-600">Products</a>
+        </li>
+        <li>
+            <a href="contact.html" class="hover:underline hover:text-black-600">Contact</a>
+        </li>
+       </ul>
+
+
+
        
-       
-        <ul class="flex flex-col gap-10 items-center text-gray-600">
-            <li>
-                <a class="hover:underline" href="#">Home</a>
-            </li>
 
-            <li>
-                <a class="hover:underline" href="#">Products</a>
-            </li>
 
-            <li>
-                <a class="hover:underline hover:text-black" href="#">Contact</a>
-            </li>
-        </ul> 
-    </section>
-  
-  
-  
-  <!-- Navbar -->
-  <nav class="bg-green-100 p-4 flex justify-between items-center shadow-md">
-    <h1 class="text-2xl font-bold">Greenden</h1>
-    <ul class="flex space-x-6 text-gray-700">
-      <li><a href="index.html" class="hover:underline">Home</a></li>
-      <li><a href="product.html" class="hover:underline">Products</a></li>
-      <li><a href="contact.html" class="hover:underline font-semibold">Contact</a></li>
-    </ul>
-  </nav>
+</section>
 
-  <!-- Contact Section -->
-  <section class="max-w-2xl mx-auto my-12 p-6 bg-white rounded-lg shadow">
-    <h2 class="text-3xl font-bold mb-4 text-center">Contact Us</h2>
-    <p class="text-center text-gray-600 mb-8">We’d love to hear from you. Fill out the form below to get in touch.</p>
 
-    <form class="space-y-4">
-      <div>
-        <label class="block text-sm font-medium mb-1" for="name">Name</label>
-        <input id="name" type="text" class="w-full border border-gray-300 p-2 rounded" placeholder="Your Name" />
-      </div>
+       <!--contact-->
 
-      <div>
-        <label class="block text-sm font-medium mb-1" for="email">Email</label>
-        <input id="email" type="email" class="w-full border border-gray-300 p-2 rounded" placeholder="your@email.com" />
-      </div>
 
-      <div>
-        <label class="block text-sm font-medium mb-1" for="message">Message</label>
-        <textarea id="message" rows="5" class="w-full border border-gray-300 p-2 rounded" placeholder="Your message..."></textarea>
-      </div>
+       <section class="bg-white dark:bg-gray-900">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">🌿 Contact Us – Greenden</h2>
+            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">We’d love to hear from you! Whether you have a question, feedback, or just want to say hello—reach out using the form below.</p>
+            <form action="#" class="space-y-8">
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                    <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
+                </div>
+                <div>
+                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                    <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                    <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                </div>
+                <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+            </form>
+        </div>
+      </section>
 
-      <button type="submit" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">Send Message</button>
-    </form>
-  </section>
+    
+<!--footer-->
 
- <!--Footer-->
- <section class="bg-green-100 p-10 flex flex-col gap-5">
+<section class="bg-green-100 p-10 mt-4 flex flex-col gap-5">
     <h1 class="text-4xl font-bold">Greenden</h1>
-    <p>The Standard chunk of Lorem ipsum used since the 1500s is reproduced below for those interest</p>
-    <p>@2021 GreenDen.com</p>
-  </section>
+    <p class="text-xl">At GreenDen, we believe every space deserves a touch of green. Our mission is to bring nature closer to you with a wide variety of healthy, hand-picked plants.</p>
+    <p>@copy Greenden 2025. All Rights Reserved</p>
+    </section>
+    
 
-<script src="contact.js"></script>
+
+
+
+    
+<script>
+
+var sidenav = document.getElementById("sidenav");
+var closenav = document.getElementById("close-nav");
+var shownav = document.getElementById("show-nav");
+
+
+
+closenav.addEventListener("click", function(){
+
+sidenav.style.right ="-60%";
+
+
+})
+
+
+shownav.addEventListener("click", function(){
+
+sidenav.style.right ="0";
+
+
+})
+
+
+
+</script>
 </body>
 </html>
